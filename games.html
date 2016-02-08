@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="node_modules/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
 
+
 </head>
 
 <body>
@@ -30,8 +31,12 @@
 </header>
 
 <main>
+    <script>
+
+    </script>
+
     <div class="row">
-        <div class="card whit z-depth-2 col l8 offset-l3">
+        <div id="card1" class="card whit z-depth-2 col l8 offset-l3">
             <div class="card-content ">
                 <div class="card-image">
                     <img src="assets/images/games/logoDiges.png">
@@ -94,7 +99,15 @@
 
     </div>
 
-    <div class="row">
+    <script>
+        var options = [
+            {selector: '#stagged-list', offset: 400, callback: 'Materialize.showStaggeredList("#stagged-list")' },
+        ];
+        Materialize.scrollFire(options);
+    </script>
+<ul id="stagged-list">
+    <li>
+    <div id="card2" class="row">
         <div class="card white z-depth-2 col l8 offset-l3">
             <div class="card-content">
                 <div class="card-image">
@@ -143,8 +156,9 @@
 
 
     </div>
-    
-    <div class="row">
+    </li>
+   <li>
+    <div id="card3" class="row">
         <div class="card white z-depth-2 col l8 offset-l3">
             <div class="card-content">
                 <div class="card-image">
@@ -200,8 +214,9 @@
         
         
     </div>
-
-    <div class="row">
+   </li>
+<li>
+    <div id="card4" class="row">
         <div class="card white z-depth-2 col l8 offset-l3">
             <div class="card-content">
                 <div class="card-image">
@@ -236,6 +251,8 @@
 
 
     </div>
+</li>
+</ul>
 
 </main>
 
