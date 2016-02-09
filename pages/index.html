@@ -1,25 +1,47 @@
 
 <html ng-app="jennyApp">
     <head>
-    <link href="../node_modules/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
-
-    <link type="text/css" rel="stylesheet" href="../mycss/mycontent.css"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
-
-        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css" media="screen,projection"/>
-
-        <link type="text/css" rel="stylesheet" href="../mycss/mycontent.css"/>
-        <link rel="stylesheet" href="//cdn.materialdesignicons.com/1.4.57/css/materialdesignicons.min.css">
-
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
+        <!--<link href="../node_modules/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />-->
+
+        <!--Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
 
 
+        <!--&lt;!&ndash; Compiled and minified JavaScript &ndash;&gt;-->
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>-->
+
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+        <link rel="stylesheet" href="//cdn.materialdesignicons.com/1.4.57/css/materialdesignicons.min.css">
+
+
+        <!--////my css//////-->
+        <link type="text/css" rel="stylesheet" href="../mycss/mycontent.css"/>
+
+
+        <!--Materialize dep-->
+        <!--<script type="text/javascript" src="../materialize/js/materialize.min.js"></script>-->
+        <!--<link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css" media="screen,projection"/>-->
+
+
+        <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+
+        <!--////////////angular////////////-->
         <script type="text/javascript" src="../node_modules/angular/angular.js"></script>
         <script type="text/javascript" src="../node_modules/angular-route/angular-route.js"></script>
-
         <script type="text/javascript" src="../js/script.js"></script>
+
+        <!--&lt;!&ndash;Angular Material&ndash;&gt;-->
+        <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular.min.js"></script>-->
+        <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular-animate.min.js"></script>-->
+        <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular-aria.min.js"></script>-->
+
+        <!--&lt;!&ndash; Angular Material Javascript now available via Google CDN; version 0.9.4 used here &ndash;&gt;-->
+        <!--<script src="//ajax.googleapis.com/ajax/libs/angular_material/0.9.4/angular-material.min.js"></script>-->
 
 
     </head>
@@ -55,9 +77,10 @@
 
                 <div ng-view></div>
 
-                    {{ text }}
+
 
             </div>
         </div>
+
     </body>
 </html>
