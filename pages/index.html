@@ -11,28 +11,29 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.css">
 
         <!--////my css//////-->
-        <link type="text/css" rel="stylesheet" href="../mycss/mycontent.css"/>
 
 
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+        <!--<script type="text/javascript" src="../materialize/css/materialize.css"></script>-->
+
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!--<script src="../materialize/js/materialize.js"></script>-->
 
         <!--////////////angular////////////-->
         <script type="text/javascript" src="../node_modules/angular/angular.js"></script>
         <script type="text/javascript" src="../node_modules/angular-route/angular-route.js"></script>
         <script type="text/javascript" src="../js/script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
 
 
+        <link type="text/css" rel="stylesheet" href="../mycss/mycontent.css"/>
 
 
     </head>
 
-    <body >
-
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="../materialize/css/materialize.css"></script>
-
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <script src="../materialize/js/materialize.js"></script>
+    <body ng-controller="mainController">
 
 
         <div class="row">
@@ -40,8 +41,10 @@
 
             </nav>
 
-            <div class="side-nav fixed z-depth-3">
+            <div id="menu" class="side-nav fixed z-depth-3">
+                <nav class="top-nav col s12 m12 l12 red darken-4">
 
+                </nav>
                 <div class="col l12">
 
                     <br>
