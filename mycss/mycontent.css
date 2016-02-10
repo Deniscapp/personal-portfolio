@@ -7,6 +7,22 @@
         /*padding-left: 0;*/
     /*}*/
 /*}*/
+/*#card1-others{*/
+    /*left: -1.9cm;*/
+/*}*/
+/*#card2-others{*/
+    /*left: -4.0cm;*/
+/*}*/
+
+/*#card3-others{*/
+    /*left: -0.5cm;*/
+    /*top: -10cm;*/
+/*}*/
+
+#cities{
+    left: 1.67%;
+}
+
 #menu{
     max-width: 100%;
     overflow-x: hidden;

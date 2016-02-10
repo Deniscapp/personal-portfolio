@@ -24,6 +24,11 @@
                 controller: 'mainController'
             }).
 
+            when('/photos',{
+                templateUrl: '../pages/photos.html',
+                controller: 'mainController'
+            }).
+
             when('/others',{
                 templateUrl: '../pages/others.html',
                 controller: 'mainController'
