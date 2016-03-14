@@ -18,6 +18,9 @@
     /*left: -0.5cm;*/
     /*top: -10cm;*/
 /*}*/
+body{
+    font-family: Roboto;
+}
 
 #cities{
     left: 1.69%;
@@ -34,6 +37,10 @@ span{
     bottom: 0.2rem;
 }
 
+#icon-fb, #icon-gt{
+    bottom: -0.25cm;
+
+}
 /*#git{*/
 /*float: right;*/
 /*}*/
