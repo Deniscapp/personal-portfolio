@@ -23,10 +23,12 @@ body{
 }
 
 #cities{
-    left: 1.69%;
+    left: 1.38%;
 }
 
-#menu{
+
+
+#menu,#photos{
     max-width: 100%;
     overflow-x: hidden;
 }
