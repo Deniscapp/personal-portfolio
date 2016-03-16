@@ -1,4 +1,5 @@
 
+
 <script>
     $(document).ready(function(){
         $('ul.tabs').tabs();
@@ -9,6 +10,7 @@
         $('.materialboxed').materialbox();
     });
 </script>
+
 
     <div class="row">
         <div class="col l10 offset-l2">
@@ -24,6 +26,24 @@
 
         </div>
 
+
+        <div id="loader-parent" class="row">
+            <div class="col l12 offset-l7">
+                <div id="loader" class="preloader-wrapper big active">
+                    <div class="spinner-layer spinner-red-only">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div><div class="gap-patch">
+                        <div class="circle"></div>
+                    </div><div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="content" style="display: none" data-bind="visible: true">
 
         <div id="london" class="col l12">
             <div class="row">
@@ -146,9 +166,13 @@
 
 
         </div>
+
         <div id="italy" class="col l12 ">Test 3</div>
         <div id="sanca" class="col l12 ">Test 4</div>
         <div id="sampa" class="col l12 ">Test 5</div>
 
+        </div>
+
 
     </div>
+

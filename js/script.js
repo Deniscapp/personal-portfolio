@@ -37,6 +37,32 @@
     }]);
 
 
-    jennyApp.controller('mainController',function($scope){
+    jennyApp.controller('mainController',function($scope,$timeout){
+        var show = function(){
+
+            $('#loader').fadeOut(500);
+            $('#content').delay(500).fadeIn();
+
+
+        };
+
+        $timeout(function(){
+            show();
+        }, 1000);
 
     });
+
+     jennyApp.controller('photosController',function($scope,$timeout){
+         //  var show = function(){
+         //
+         //          $('#loader').fadeOut(500);
+         //          $('#content').delay(500).fadeIn();
+         //
+         //
+         //  };
+         //
+         //$timeout(function(){
+         //    show();
+         //}, 1000);
+
+        });

@@ -1,7 +1,23 @@
 <!--<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>-->
 
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>-->
-<main>
+
+<div id="loader-parent" class="row">
+    <div class="col l12 offset-l7">
+        <div id="loader" class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-red-only">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div><div class="gap-patch">
+                <div class="circle"></div>
+            </div><div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="content" style="display: none" data-bind="visible: true">
     <div class="row">
 
         <div id="card1-others" class="card white z-depth-2 col l3 offset-l3">
@@ -149,5 +165,5 @@
 
     </div>
 
-</main>
+</div>
 

@@ -54,6 +54,10 @@ main {
     flex: 1 0 auto;
 }
 
+#loader{
+    bottom: -5cm;
+}
+
 
 #staggered-test{
     opacity: 0;
