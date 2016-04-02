@@ -34,6 +34,7 @@
                 controller: 'mainController'
             });
 
+            $locationProvider.html5Mode(true);
 
     }]);
 
