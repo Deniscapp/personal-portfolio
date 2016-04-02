@@ -6,7 +6,7 @@
     var jennyApp = angular.module('jennyApp',['ngRoute']);
 
     jennyApp.config(['$routeProvider','$locationProvider',
-        function($routeProvider){
+        function($routeProvider,$locationProvider){
 
         $routeProvider.
             when('/',{
@@ -34,10 +34,13 @@
                 controller: 'mainController'
             });
 
-            //$locationProvider.html5Mode(true);
+            $locationProvider.html5Mode(true);
 
     }]);
 
+    //jennyApp.run(function ($browser) {
+    //    $browser.baseHref = function () { return "./" };
+    //});
 
     jennyApp.controller('mainController',function($scope,$timeout){
         var show = function(){
