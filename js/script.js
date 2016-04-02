@@ -5,34 +5,35 @@
 
     var jennyApp = angular.module('jennyApp',['ngRoute']);
 
-    jennyApp.config(['$routeProvider',
+    jennyApp.config(['$routeProvider','$locationProvider',
         function($routeProvider){
 
         $routeProvider.
-            when('/about',{
-                templateUrl: '../pages/about.html',
+            when('/',{
+                templateUrl: 'about.html',
                 controller: 'mainController'
             }).
 
             when('/shortmovies',{
-                templateUrl: '../pages/shortmovies.html',
+                templateUrl: 'shortmovies.html',
                 controller: 'mainController'
             }).
 
             when('/games',{
-                templateUrl: '../pages/games.html',
+                templateUrl: 'games.html',
                 controller: 'mainController'
             }).
 
             when('/photos',{
-                templateUrl: '../pages/photos.html',
+                templateUrl: 'photos.html',
                 controller: 'mainController'
             }).
 
             when('/others',{
-                templateUrl: '../pages/others.html',
+                templateUrl: 'others.html',
                 controller: 'mainController'
             });
+
 
     }]);
 
