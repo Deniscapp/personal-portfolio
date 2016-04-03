@@ -19,6 +19,9 @@
                         },
                         'sideContent':{
                             templateUrl: 'navside.html'
+                        },
+                        'footerContent':{
+                            templateUrl: 'footer.html'
                         }
                     }
                 })
@@ -30,6 +33,9 @@
                         },
                         'sideContent':{
                             templateUrl: 'navside.html'
+                        },
+                        'footerContent':{
+                            templateUrl: 'footer.html'
                         }
                     }
                 })
@@ -41,6 +47,9 @@
                         },
                         'sideContent':{
                             templateUrl: 'navside.html'
+                        },
+                        'footerContent':{
+                            templateUrl: 'footer.html'
                         }
                     }
                 })
@@ -52,6 +61,9 @@
                         },
                         'sideContent':{
                             templateUrl: 'navside.html'
+                        },
+                        'footerContent':{
+                            templateUrl: 'footer.html'
                         }
                     }
                 })
@@ -63,6 +75,9 @@
                         },
                         'sideContent':{
                             templateUrl: 'navside.html'
+                        },
+                        'footerContent':{
+                            templateUrl: 'footer.html'
                         }
                     }
                 })

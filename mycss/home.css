@@ -1,0 +1,50 @@
+body{
+    background-color: antiquewhite;
+}
+
+#site-button{
+    margin-left: 44.5%;
+    margin-top: 10%;
+
+
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.message{
+    font-family: 'Consolas';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    font-size: 2em;
+}
+.message2{
+    font-family: 'Consolas';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    font-size: 2em;
+}
+
