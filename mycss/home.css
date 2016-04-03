@@ -3,17 +3,19 @@ body{
 }
 
 #site-button{
-    margin-left: 44.0%;
-    margin-top: 10%;
+    /*margin-left: 30.0%;*/
+    /*margin-top: 10%;*/
 
 
 }
-
 .typed-cursor{
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
+    font-size: 2.5em;
+    position: relative;
+    top: -0.2em;
 }
 @keyframes blink{
     0% { opacity:1; }
@@ -33,18 +35,16 @@ body{
 
 .message{
     font-family: 'Consolas';
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 10vh;
     font-size: 2em;
 }
-.message2{
-    font-family: 'Consolas';
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 15vh;
-    font-size: 2em;
-}
+
+
+/*.message2{*/
+    /*font-family: 'Consolas';*/
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    /*height: 15vh;*/
+    /*font-size: 2em;*/
+/*}*/
 
