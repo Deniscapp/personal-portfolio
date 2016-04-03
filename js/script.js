@@ -91,7 +91,7 @@
 
                 })
                 .state('/',{
-                    url: '/',
+                    url: '',
                     views: {
                         'homeContent': {
                             templateUrl: 'home.html'
