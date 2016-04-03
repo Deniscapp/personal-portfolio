@@ -28,13 +28,13 @@
         $(".message").typed({
             startDelay: 1000,
             strings: ["Hello! :)", "My name is Jennifer Lu and this is my website.","Welcome! :D"],
-            typeSpeed: 0,
+            typeSpeed: 50,
             showCursor: true,
             cursorChar: "|"
         });
     });
 
-    $('#sitebutton').delay(500).fadeIn();
+//    $('#sitebutton').delay(500).fadeIn();
 
 //    $(function(){
 //        $(".message2").typed({
@@ -48,10 +48,10 @@
     var bounce = new Bounce();
     bounce
             .translate({
-                from: { x: -600, y: 0 },
+                from: { x: -1000, y: 0 },
                 to: { x: 0, y: 0 },
                 duration: 1900,
-                stiffness: 4
+                stiffness: 2
             });
 
     var bounce2 = new Bounce();
@@ -75,7 +75,7 @@
             console.log("Animation Complete");
             $('#pic').click(function(){
 
-                bounce2.applyTo(($("#pic")));
+//                bounce2.applyTo(($("#pic")));
             });
         });
 
