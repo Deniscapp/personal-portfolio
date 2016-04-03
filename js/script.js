@@ -89,6 +89,15 @@
                         }
                     }
 
+                })
+                .state('/',{
+                    url: '/',
+                    views: {
+                        'homeContent': {
+                            templateUrl: 'home.html'
+                        }
+                    }
+
                 });
 
 
