@@ -13,50 +13,69 @@
             $stateProvider
                 .state('shortmovies',{
                     url: '/shortmovies',
-                    templateUrl: 'shortmovies.html'
+                    views:{
+                        'mainContent':{
+                            templateUrl: 'shortmovies.html'
+                        },
+                        'sideContent':{
+                            templateUrl: 'navside.html'
+                        }
+                    }
                 })
                 .state('games',{
                     url: '/games',
-                    templateUrl: 'games.html'
+                    views:{
+                        'mainContent':{
+                            templateUrl: 'games.html'
+                        },
+                        'sideContent':{
+                            templateUrl: 'navside.html'
+                        }
+                    }
                 })
                 .state('photos',{
                     url: '/photos',
-                    templateUrl: 'photos.html'
+                    views:{
+                        'mainContent':{
+                            templateUrl: 'photos.html'
+                        },
+                        'sideContent':{
+                            templateUrl: 'navside.html'
+                        }
+                    }
                 })
                 .state('others',{
                     url: '/others',
-                    templateUrl: 'others.html'
+                    views:{
+                        'mainContent':{
+                            templateUrl: 'others.html'
+                        },
+                        'sideContent':{
+                            templateUrl: 'navside.html'
+                        }
+                    }
                 })
                 .state('about',{
                     url: '/about',
-                    templateUrl: 'about.html'
+                    views:{
+                        'mainContent':{
+                            templateUrl: 'about.html'
+                        },
+                        'sideContent':{
+                            templateUrl: 'navside.html'
+                        }
+                    }
+                })
+                .state('home',{
+                    url: '/home',
+                    views: {
+                        'homeContent': {
+                            templateUrl: 'home.html'
+                        }
+                    }
+
                 });
 
-        //$routeProvider.
-        //    when('/',{
-        //        templateUrl: 'about.html',
-        //        controller: 'mainController'
-        //    }).
-        //
-        //    when('/shortmovies',{
-        //        templateUrl: 'shortmovies.html',
-        //        controller: 'mainController'
-        //    }).
-        //
-        //    when('/games',{
-        //        templateUrl: 'games.html',
-        //        controller: 'mainController'
-        //    }).
-        //
-        //    when('/photos',{
-        //        templateUrl: 'photos.html',
-        //        controller: 'mainController'
-        //    }).
-        //
-        //    when('/others',{
-        //        templateUrl: 'others.html',
-        //        controller: 'mainController'
-        //    });
 
             //$locationProvider.html5Mode(true);
 
@@ -67,18 +86,18 @@
     //});
 
     jennyApp.controller('mainController',function($scope,$timeout){
-        $scope.show = function(){
+        //$scope.show = function(){
+        //
+        //    $('#loader').fadeOut(500);
+        //    $('#content').delay(500).fadeIn();
+        //
+        //
+        //};
 
-            $('#loader').fadeOut(500);
-            $('#content').delay(500).fadeIn();
-
-
-        };
-
-        $scope.$on('$viewContentLoaded', function(){
-            $('#loader').fadeOut(500);
-            $('#content').delay(500).fadeIn();
-        });
+        //$scope.$on('$viewContentLoaded', function(){
+        //    $('#loader').fadeOut(500);
+        //    $('#content').delay(500).fadeIn();
+        //});
         //$timeout(function(){
         //    show();
         //}, 1000);
@@ -97,5 +116,5 @@
          //$timeout(function(){
          //    show();
          //}, 1000);
-
+            console.log("Photos");
         });

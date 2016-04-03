@@ -18,6 +18,15 @@
     /*left: -0.5cm;*/
     /*top: -10cm;*/
 /*}*/
+.waves-effect, .card .card-action{
+    z-index: 0;
+}
+
+/*#about-image{*/
+    /*opacity: 0;*/
+/*}*/
+
+
 body{
     font-family: Roboto;
 }
@@ -32,6 +41,9 @@ body{
     max-width: 100%;
     overflow-x: hidden;
 }
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
 
 span{
     vertical-align:middle;
@@ -39,8 +51,10 @@ span{
     bottom: 0.2rem;
 }
 
+
+
 #icon-fb, #icon-gt{
-    bottom: -0.25cm;
+    /*bottom: -0.50cm;*/
 
 }
 /*#git{*/
@@ -60,7 +74,3 @@ main {
     bottom: -5cm;
 }
 
-
-#staggered-test{
-    opacity: 0;
-}
