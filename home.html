@@ -26,7 +26,8 @@
 
         <div class="row">
             <div class="center-align">
-                <a ui-sref="about" id="site-button" class="button button-3d button-primary button-rounded">Enter</a>
+                <button style="display: none" data-bind="visible: true" id="site-button">ok</button>
+                <!--<a ui-sref="about" id="site-button" class="button button-3d button-primary button-rounded">Enter</a>-->
             </div>
         </div>
 
@@ -62,27 +63,37 @@
             });
 
     var bounce2 = new Bounce();
-    bounce2.scale({
-       from: {x:1,y:1},
-        to: {x:1,y:2},
-        duration: 1000,
-        stiffness:1
-
+    var bounce3 = new Bounce();
+    bounce2.translate({
+       from: {x:0,y:0},
+        to: {x:-500,y:-10},
+        duration: 3000,
+        stiffness:2
     });
     bounce2.scale({
-            from: {x:1,y:1},
-            to: {x:1,y:2},
-            duration: 1000,
-            stiffness:1,
-            bounces: 6
+            from: {x:-1,y:1},
+            to: {x:1,y:1},
+            duration: 3000,
+            stiffness:4,
+            bounces: 0
+    });
+    bounce3.scale({
+        from: {x:1,y:1},
+        to: {x:-1,y:-1},
+        duration: 3000,
+        stiffness:4,
+        bounces: 0
     });
 
 
         bounce.applyTo($("#pic")).then(function() {
             console.log("Animation Complete");
-            $('#pic').click(function(){
+            $('#site-button').delay(8000).fadeIn();
+            $('#site-button').click(function(){
+                bounce2.applyTo($("#pic")).then(function () {
+//                    bounce3.applyTo($("#pic"));
+                });
 
-//                bounce2.applyTo(($("#pic")));
             });
         });
 

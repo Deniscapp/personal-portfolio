@@ -96,6 +96,10 @@
                         'homeContent': {
                             templateUrl: 'home.html'
                         }
+                        // },
+                        // 'sideContent':{
+                        //     templateUrl: 'navside.html'
+                        // }
                     }
 
                 });
