@@ -8,7 +8,7 @@
     jennyApp.config(['$locationProvider','$stateProvider','$urlRouterProvider',
         function($locationProvider,$stateProvider,$urlRouterProvider){
 
-            $urlRouterProvider.otherwise('/about');
+            $urlRouterProvider.otherwise('about');
 
             $stateProvider
                 .state('shortmovies',{
@@ -114,6 +114,12 @@
     //});
 
     jennyApp.controller('mainController',function($scope,$timeout){
+        $scope.script=[
+            $(".button-collapse").sideNav({
+                closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+            })
+
+        ];
         //$scope.show = function(){
         //
         //    $('#loader').fadeOut(500);
@@ -129,6 +135,7 @@
         //$timeout(function(){
         //    show();
         //}, 1000);
+
 
     });
 

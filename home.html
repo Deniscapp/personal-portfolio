@@ -1,5 +1,5 @@
 
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<!--<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>-->
 
 <script type="text/javascript" src="js/bounce.min.js"></script>
 <script type="text/javascript" src="js/typed.js"></script>
@@ -26,8 +26,8 @@
 
         <div class="row">
             <div class="center-align">
-                <button style="display: none" data-bind="visible: true" id="site-button">ok</button>
-                <!--<a ui-sref="about" id="site-button" class="button button-3d button-primary button-rounded">Enter</a>-->
+                <!--<button style="display: none" data-bind="visible: true" id="site-button">ok</button>-->
+                <a ui-sref="about" id="site-button" class="button button-3d button-primary button-rounded">Enter</a>
             </div>
         </div>
 
@@ -89,12 +89,12 @@
         bounce.applyTo($("#pic")).then(function() {
             console.log("Animation Complete");
             $('#site-button').delay(8000).fadeIn();
-            $('#site-button').click(function(){
-                bounce2.applyTo($("#pic")).then(function () {
-//                    bounce3.applyTo($("#pic"));
-                });
-
-            });
+//            $('#site-button').click(function(){
+//                bounce2.applyTo($("#pic")).then(function () {
+////                    bounce3.applyTo($("#pic"));
+//                });
+//
+//            });
         });
 
 
