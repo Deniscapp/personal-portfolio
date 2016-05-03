@@ -3,61 +3,39 @@
 <!--<link type="text/css" rel="stylesheet" href="../mycss/mycontent.css"/>-->
 
 <div class="row">
-    <nav class="top-nav col s12 m12 l12 red darken-4">
-        <div class="nav-wrapper">
-
+    <div class="nav-wrapper">
+        <nav class="top-nav col s12 m12 l12 red darken-4">
             <div class="col s2 offset-s1">
-                <a href="#" data-activates="slide-out" class="button-collapse hide-on-large-only"><i class="mdi-navigation-menu"></i></a>
+                <!--<a href="#" data-activates="slide-out" class="button-collapse hide-on-large-only"><i class="mdi-navigation-menu"></i></a>-->
             </div>
-
-            <div id="menu">
-                <div class="col l12 offset-l1 ">
-                    <ul id="slide-out" class="side-nav fixed">
-                        <nav class="top-nav col s12 m12 l12 red darken-4"></nav>
-                        <div class="row">
-                            <div class="col l9 offset-l2 s10 offset-s1">
-                                <div class="row"></div>
-                                    <img src="assets/images/profile.png" class="circle responsive-img"></li>
-                            </div>
-                        </div>
-                        <li ><a ui-sref="about"> <span class="material-icons">face</span> About </a></li>
-                        <li ><a ui-sref="shortmovies"> <span class="material-icons">theaters</span> Short Movies</a></li>
-                        <li ><a ui-sref="games"> <span class="material-icons">videogame_asset</span> Games Designed</a></li>
-                        <li ><a ui-sref="photos"> <span class="material-icons">photo_camera</span> Pictures</a></li>
-                        <li ><a ui-sref="others"> <span class="material-icons">brush</span> Other Works</a></li>
-
-
-                        <!--<li class="navl"><a href="contact.html"> <span class="material-icons">email</span> Contact Me!</a></li>-->
-                    </ul>
-
-                    <!--<ul id="nav-mobile" class="left hide-on-large-and-down">-->
-                        <!--<nav class="top-nav col s12 m12 l12 red darken-4"></nav>-->
-                        <!--<div class="row">-->
-                            <!--<div class="col l9 offset-l2">-->
-                                <!--<div class="row"></div>-->
-                                <!--<img src="assets/images/profile.png" class="circle responsive-img"></li>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<li ><a ui-sref="about"> <span class="material-icons">face</span> About </a></li>-->
-                        <!--<li ><a ui-sref="shortmovies"> <span class="material-icons">theaters</span> Short Movies</a></li>-->
-                        <!--<li ><a ui-sref="games"> <span class="material-icons">videogame_asset</span> Games Designed</a></li>-->
-                        <!--<li ><a ui-sref="photos"> <span class="material-icons">photo_camera</span> Pictures</a></li>-->
-                        <!--<li ><a ui-sref="others"> <span class="material-icons">brush</span> Other Works</a></li>-->
-
-
-                        <!--&lt;!&ndash;<li class="navl"><a href="contact.html"> <span class="material-icons">email</span> Contact Me!</a></li>&ndash;&gt;-->
-                    <!--</ul>-->
+        </nav>
+    </div>
+    <div id="menu">
+        <div class="col l12 offset-l1 ">
+            <ul id="slide-out" class="side-nav fixed">
+                <nav class="top-nav col s12 m12 l12 red darken-4"></nav>
+                <div class="row">
+                    <div class="col l9 offset-l2">
+                        <div class="row"></div>
+                            <img src="assets/images/profile.png" class="circle responsive-img"></li>
+                    </div>
                 </div>
+                <li class="navl"><a ui-sref="about"> <span class="material-icons">face</span> Sobre </a></li>
+                <li class="navl"><a ui-sref="shortmovies"> <span class="material-icons">theaters</span> Curtas-Metragens</a></li>
+                <li class="navl"><a ui-sref="games"> <span class="material-icons">videogame_asset</span> Ilustração de Games</a></li>
+                <li class="navl"><a ui-sref="photos"> <span class="material-icons">photo_camera</span> Fotos</a></li>
+                <li class="navl"><a ui-sref="others"> <span class="material-icons">brush</span> Outros Trabalhos</a></li>
+                <!--<li class="navl"><a href="contact.html"> <span class="material-icons">email</span> Contact Me!</a></li>-->
+            </ul>
 
-            </div>
+
         </div>
-    </nav>
 
+    </div>
 
 </div>
 <script>
     $(".button-collapse").sideNav({
-        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+        closeOnClick: true
     });
-
 </script>

@@ -15,7 +15,6 @@
     </div>
     <div class="row"></div>
 </div>
-
         <div class="row">
             <div class="center-align">
                 <span class="message">
@@ -89,12 +88,12 @@
         bounce.applyTo($("#pic")).then(function() {
             console.log("Animation Complete");
             $('#site-button').delay(8000).fadeIn();
-//            $('#site-button').click(function(){
-//                bounce2.applyTo($("#pic")).then(function () {
-////                    bounce3.applyTo($("#pic"));
-//                });
-//
-//            });
+            $('#site-button').click(function(){
+                bounce2.applyTo($("#pic")).then(function () {
+//                    bounce3.applyTo($("#pic"));
+                });
+
+            });
         });
 
 

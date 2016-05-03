@@ -94,12 +94,9 @@
                     url: '',
                     views: {
                         'homeContent': {
-                            templateUrl: 'home.html'
+                            templateUrl: 'home.html',
+                            controller: 'homeController'
                         }
-                        // },
-                        // 'sideContent':{
-                        //     templateUrl: 'navside.html'
-                        // }
                     }
 
                 });
@@ -113,43 +110,24 @@
     //    $browser.baseHref = function () { return "./" };
     //});
 
+    jennyApp.controller('sideNavController',function($scope,$timeout){
+        $(".button-collapse").sideNav({
+            edge: 'right', // Choose the horizontal origin
+            closeOnClick: true
+        })
+
+    });
+
     jennyApp.controller('mainController',function($scope,$timeout){
-        $scope.script=[
-            $(".button-collapse").sideNav({
-                closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-            })
 
-        ];
-        //$scope.show = function(){
-        //
-        //    $('#loader').fadeOut(500);
-        //    $('#content').delay(500).fadeIn();
-        //
-        //
-        //};
-
-        //$scope.$on('$viewContentLoaded', function(){
-        //    $('#loader').fadeOut(500);
-        //    $('#content').delay(500).fadeIn();
-        //});
-        //$timeout(function(){
-        //    show();
-        //}, 1000);
 
 
     });
 
-     jennyApp.controller('photosController',function($scope,$timeout){
-         //  var show = function(){
-         //
-         //          $('#loader').fadeOut(500);
-         //          $('#content').delay(500).fadeIn();
-         //
-         //
-         //  };
-         //
-         //$timeout(function(){
-         //    show();
-         //}, 1000);
-            console.log("Photos");
+     jennyApp.controller('homeController',function($scope,$timeout){
+
+         $scope.transact = function () {
+             
+         }
+
         });
