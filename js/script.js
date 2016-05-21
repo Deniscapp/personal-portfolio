@@ -81,6 +81,20 @@
                         }
                     }
                 })
+                .state('books',{
+                    url: '/books',
+                    views:{
+                        'mainContent':{
+                            templateUrl: 'books.html'
+                        },
+                        'sideContent':{
+                            templateUrl: 'navside.html'
+                        },
+                        'footerContent':{
+                            templateUrl: 'footer.html'
+                        }
+                    }
+                })
                 .state('home',{
                     url: '/home',
                     views: {
@@ -120,7 +134,7 @@
 
     jennyApp.controller('mainController',function($scope,$timeout){
 
-
+        
 
     });
 
