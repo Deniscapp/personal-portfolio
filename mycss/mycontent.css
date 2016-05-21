@@ -35,7 +35,28 @@ body{
     left: 1.38%;
 }
 
+body{
+    background-color: #e0e0e0;
+}
 
+/*div .card-white{*/
+    /*background-color: #eeeeee;*/
+/*}*/
+.tabs .tab a{
+    color: #00838f;
+}
+.tabs .tab a:hover {
+    color: #00acc1;
+}
+
+.tabs .indicator {
+    background-color: #00838f;
+
+}
+
+span, a{
+    color: #00838f;
+}
 
 #menu,#photos{
     max-width: 100%;
