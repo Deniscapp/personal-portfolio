@@ -39,11 +39,11 @@
                         }
                     }
                 })
-                .state('photos',{
-                    url: '/photos',
+                .state('design',{
+                    url: '/design',
                     views:{
                         'mainContent':{
-                            templateUrl: 'photos.html'
+                            templateUrl: 'design.html'
                         },
                         'sideContent':{
                             templateUrl: 'navside.html'
