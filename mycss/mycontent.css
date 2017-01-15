@@ -7,7 +7,66 @@
         /*padding-left: 0;*/
     /*}*/
 /*}*/
+/*#card1-others{*/
+    /*left: -1.9cm;*/
+/*}*/
+/*#card2-others{*/
+    /*left: -4.0cm;*/
+/*}*/
 
+/*#card3-others{*/
+    /*left: -0.5cm;*/
+    /*top: -10cm;*/
+/*}*/
+.waves-effect, .card .card-action{
+    z-index: 0;
+}
+
+/*#about-image{*/
+    /*opacity: 0;*/
+/*}*/
+
+
+body{
+    font-family: Roboto;
+}
+
+#cities{
+    left: 1.38%;
+}
+
+body{
+    background-color: #e0e0e0;
+}
+
+/*div .card-white{*/
+    /*background-color: #eeeeee;*/
+/*}*/
+.tabs .tab a{
+    color: #00838f;
+}
+.tabs .tab a:hover {
+    color: #00acc1;
+}
+
+.tabs .indicator {
+    background-color: #00838f;
+
+}
+
+span, a{
+    color: #00838f;
+}
+
+#menu,#photos{
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    bottom: 1.35em;
+}
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
 
 span{
     vertical-align:middle;
@@ -15,11 +74,26 @@ span{
     bottom: 0.2rem;
 }
 
+
+
+#icon-fb, #icon-gt{
+    /*bottom: -0.50cm;*/
+
+}
 /*#git{*/
 /*float: right;*/
 /*}*/
-
-
-#staggered-test{
-    opacity: 0;
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
+/**/
+main {
+    flex: 1 0 auto;
+}
+
+#loader{
+    bottom: -5cm;
+}
+

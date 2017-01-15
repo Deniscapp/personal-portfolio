@@ -1,29 +1,47 @@
-<link href="node_modules/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
-<link type="text/css" rel="stylesheet" href="mycss/mycontent.css"/>
+<!--<link href="../node_modules/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />-->
 
+<!--<link type="text/css" rel="stylesheet" href="../mycss/mycontent.css"/>-->
+<style>
+   /*body div .nav-wrapper{*/
+       /*!*background-color: #ef5350;*!*/
+   /*}*/
+</style>
 <div class="row">
-    <nav class="top-nav col s12 m12 l12 red darken-4">
-
-    </nav>
-        <div class="side-nav fixed z-depth-3">
-
-            <div class="col l12">
-
-                <br>
-                <div class="col l9 offset-l2">
-                    <img src="assets/images/profile.png"  class="circle responsive-img">
-                </div>
+    <div class="nav-wrapper">
+        <nav class="top-nav col s12 m12 l12 light-green">
+            <div class="col s2 offset-s1">
+                <!--<a href="#" data-activates="slide-out" class="button-collapse hide-on-large-only"><i class="mdi-navigation-menu"></i></a>-->
             </div>
-                <div class="col l12 offset-l1 ">
-                    <ul id="side-nav" class="  ">
-                        <li class="navl"><a href="index.html"> <span class="material-icons">face</span> About </a></li>
-                        <li class="navl"><a href="shortmovies.html"> <span class="material-icons">theaters</span> Short Movies</a></li>
-                        <li class="navl"><a href="games.html"> <span class="mdi mdi-gamepad-variant mdi-24px"></span> Games Designed</a></li>
-                        <li class="navl"><a href="projects.html"> <span class="mdi mdi-camera mdi-24px"></span> Pictures</a></li>
-                        <li class="navl"><a href="others.html"> <span class="mdi mdi-brush mdi-24px"></span> Other Works</a></li>
-                        <li class="navl"><a href="contact.html"> <span class="material-icons">email</span> Contact Me!</a></li>
-                    </ul>
+        </nav>
+    </div>
+    <div style="background-color:#e0e0e0; " id="menu">
+        <div class="col l12 offset-l1 ">
+            <ul id="slide-out" class="side-nav fixed">
+                <nav  class="top-nav col s12 m12 l12 light-green"></nav>
+                <div class="row">
+                    <div class="col l9 offset-l2">
+                        <div class="row"></div>
+                            <img src="assets/images/profile.png" class="circle responsive-img"></li>
+                    </div>
                 </div>
+                <li  class="navl"><a style="color:#00838f" ui-sref="about"> <span class="material-icons">face</span> Sobre </a></li>
+                <li class="navl"><a style="color: #00838f" ui-sref="shortmovies"> <span class="material-icons">theaters</span> Curta-Metragens</a></li>
+                <li class="navl"><a style="color: #00838f" ui-sref="games"> <span class="material-icons">videogame_asset</span> Ilustração de Games</a></li>
+                <li class="navl"><a style="color: #00838f" ui-sref="books"> <span class="material-icons">book</span> Ilustração de Livros</a></li>
+                <li class="navl"><a style="color: #00838f" ui-sref="design"> <span class="material-icons">border_color</span> Design Gráfico</a></li>
+                <!--<li class="navl"><a style="color: #00838f" ui-sref="photos"> <span class="material-icons">photo_camera</span> Fotografias</a></li>-->
+                <li class="navl"><a style="color: #00838f" ui-sref="others"> <span class="material-icons">brush</span> Outros Trabalhos</a></li>
+                <!--<li class="navl"><a href="contact.html"> <span class="material-icons">email</span> Contact Me!</a></li>-->
+            </ul>
+
 
         </div>
+
+    </div>
+
 </div>
+<script>
+    $(".button-collapse").sideNav({
+        closeOnClick: true
+    });
+</script>
